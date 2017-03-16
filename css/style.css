@@ -120,9 +120,95 @@ header
 	align-items: center;
 }
 
+.part-title
+{
+	margin: 2em;
+}
+
 .type1
 {
 	background-color: #f5f5f5;
+}
+
+.type2
+{
+	
+}
+
+.valeurs-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+
+	flex-wrap: wrap;
+}
+
+.valeur
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+
+	width: 20%;
+	margin: 1em;
+}
+
+.valeur-name
+{
+	margin: 1em;
+	padding: 2.5em;
+	border-radius: 10em;
+
+	box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,.1);
+	color: #E0E0E0;
+	background-color: orange;
+}
+
+.part-text
+{
+	justify-content: center;
+	align-items: center;
+
+	text-align: center;
+
+	margin: 5em;
+	width: 70%;
+}
+
+.equipe-container
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.membre
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	width: 40em;
+	margin: 1em;
+	padding: 1em;
+}
+
+.membre-specs
+{
+	margin: 1em;
 }
 
 @keyframes animation-voiture
@@ -131,7 +217,6 @@ header
 	{
 		transform: translateX(-20em);
 	}
-
 	to
 	{
 		transform: translateX(calc(100vw + 30em ));
@@ -139,8 +224,66 @@ header
 }
 
 
+@media screen and (max-width: 1450px) {
+
+  .membre
+	{
+		width: 27em;
+	}
+
+}
+
+@media screen and (max-width: 1020px) {
+
+  .membre
+	{
+		width: 15em;
+	}
+
+}
+
+@media screen and (max-width: 950px) {
+
+  .anim-tree img
+	{
+		width: 10em;
+		height: 10em;
+	}
+
+	.anim-car
+	{
+		height: 6em;
+	}
+
+	.anim-car img
+	{
+		width: 8em;
+	}
+
+	.part-title
+	{
+		margin: 1em;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .valeurs-container
+  {
+  	flex-direction: column;
+  }
+
+	.valeur
+	{
+		width: 50%;
+	}
+
+}
+
+
 @media screen and (max-width: 480px) {
-  
+
   .header-home
   {
   	margin: 0.5em;
