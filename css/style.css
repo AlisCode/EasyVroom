@@ -23,6 +23,11 @@ header
 	width: 100%;
 }
 
+#content
+{
+	position: relative;
+}
+
 .infos-header
 {
 	display: flex;
@@ -132,7 +137,7 @@ header
 
 .type2
 {
-	
+
 }
 
 .valeurs-container
